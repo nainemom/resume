@@ -12,6 +12,7 @@ module.exports = {
     contentBase: rootDir,
     compress: true,
     hot: true,
+    open: true,
     host: '0.0.0.0',
     port: 8321
   },
