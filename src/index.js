@@ -1,2 +1,7 @@
 import '../styles/style.css'
-alert('hi :D')
+
+console.log('hi :D')
+
+setTimeout(() => {
+  document.dispatchEvent(new Event('prerender-ready'))
+}, 4000)

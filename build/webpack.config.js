@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const rootDir = path.resolve(__dirname, '../')
 
 module.exports = {
@@ -45,8 +47,17 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({
-    filename: 'index.html',
-    template: path.resolve(rootDir, 'public/template.html')
-  })]
+  plugins: [
+    new PrerenderSPAPlugin({
+      staticDir: rootDir,
+      routes: ['/'],
+      renderer: new Renderer({
+        renderAfterDocumentEvent: 'prerender-ready'
+      })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: path.resolve(rootDir, 'public/template.html')
+    })
+  ]
 }
