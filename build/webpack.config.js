@@ -5,7 +5,7 @@ const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const rootDir = path.resolve(__dirname, '../')
 
 module.exports = {
-  entry: path.resolve(rootDir, 'src/index.js'),
+  entry: path.join(rootDir, 'src/index.js'),
   output: {
     path: rootDir,
     filename: 'bundle.js'
@@ -46,6 +46,14 @@ module.exports = {
         ],
       },
       {
+        test: /\.htm$/,
+        use: [
+            {
+                loader: "html-loader"
+            }
+        ]
+      },
+      {
         test: /\.md$/,
         use: [
             {
@@ -55,20 +63,34 @@ module.exports = {
                 loader: "markdown-loader"
             }
         ]
-      }
+      },
+      {
+        test: /\.(jpg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              path: rootDir,
+              name: '[name].[ext]?[hash]',
+            }
+          }
+        ],
+      },
     ]
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Salam',
+      filename: 'index.html',
+      template: path.join(rootDir, 'public/template.html')
+    }),
     new PrerenderSPAPlugin({
       staticDir: rootDir,
+      outputDir: rootDir,
       routes: ['/'],
       renderer: new Renderer({
         renderAfterDocumentEvent: 'prerender-ready'
       })
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: path.resolve(rootDir, 'public/template.html')
     })
   ]
 }
