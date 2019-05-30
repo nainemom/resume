@@ -1,6 +1,6 @@
 const path = require('path')
-const rootDir = path.resolve(__dirname, '../')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const rootDir = path.resolve(__dirname, '../')
 
 module.exports = {
   entry: path.resolve(rootDir, 'src/index.js'),
@@ -35,7 +35,11 @@ module.exports = {
             loader: 'style-loader/url'
           },
           {
-            loader: 'file-loader'
+            loader: 'file-loader',
+            options: {
+              path: rootDir,
+              name: '[name].[ext]?[hash]',
+            }
           }
         ],
       }
