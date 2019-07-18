@@ -10,6 +10,11 @@ body {
   padding: 15px;
 }
 
+#app {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 .profile-pic {
   display: inline-block;
   width: 90px;
