@@ -31,37 +31,36 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss|sass)$/,
         use: [
           {
-            loader: 'style-loader/url'
+            loader: 'style-loader'
           },
           {
-            loader: 'file-loader',
-            options: {
-              path: rootDir,
-              name: '[name].[ext]?[hash]',
-            }
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader'
           }
         ],
       },
       {
         test: /\.htm$/,
         use: [
-            {
-                loader: "html-loader"
-            }
+          {
+              loader: "html-loader"
+          }
         ]
       },
       {
         test: /\.md$/,
         use: [
-            {
-                loader: "html-loader"
-            },
-            {
-                loader: "markdown-loader"
-            }
+          {
+              loader: "html-loader"
+          },
+          {
+              loader: "markdown-loader"
+          }
         ]
       },
       {
