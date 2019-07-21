@@ -1,7 +1,5 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
-const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const rootDir = path.resolve(__dirname, '../')
 
 module.exports = {
@@ -53,21 +51,10 @@ module.exports = {
         ]
       },
       {
-        test: /\.md$/,
-        use: [
-          {
-              loader: "html-loader"
-          },
-          {
-              loader: "markdown-loader"
-          }
-        ]
-      },
-      {
         test: /\.(jpg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
               path: rootDir,
               name: '[name].[ext]?[hash]',
@@ -82,14 +69,6 @@ module.exports = {
       title: 'Amir Momenian - Resume',
       filename: 'index.html',
       template: path.join(rootDir, 'public/template.html')
-    }),
-    new PrerenderSPAPlugin({
-      staticDir: rootDir,
-      outputDir: rootDir,
-      routes: ['/'],
-      renderer: new Renderer({
-        renderAfterDocumentEvent: 'prerender-ready'
-      })
     })
   ]
 }
