@@ -5,40 +5,72 @@ export default {
     const end = new Date().getTime()
     return `~${Math.round((end - start) / 31536000000)}`
   },
-  workExprience: [
+  workExpriences: [
     {
       title: 'Snapp',
-      from: new Date('May 2019'),
+      from: new Date('10 May 2019'),
       to: 'present',
-      type: 1
+      type: 1,
+      position: 'Frontend Developer',
+      description: 'Part of frontend team who works on Snapp PWA and Blog and other internal projects. I also manage staging of projects (development to production) of frontend team projects.'
     },
     {
       title: 'Paygear Tunisia',
-      from: new Date('November 2018'),
-      to: new Date('April 2019'),
+      from: new Date('10 November 2018'),
+      to: new Date('10 April 2019'),
       type: 0,
-      position: 'Frontend Developer'
+      position: 'Frontend Developer',
+      description: 'Works on arabic/english version of Paygear backoffice panel to lunch in Tunisia.'
     },
     {
       title: 'HotelOneClick',
-      from: new Date('March 2018'),
-      to: new Date('April 2019'),
+      from: new Date('10 March 2018'),
+      to: new Date('10 April 2019'),
       type: 0,
-      position: 'Frontend Developer - Platform Designer'
+      position: 'Frontend Developer - Platform Designer',
+      description: 'Helps to design hole platform and specifically works on persian/english version of HotelOneClick backoffice panel.'
     },
     {
       title: 'Paygear',
-      from: new Date('April 2017'),
-      to: new Date('April 2019'),
+      from: new Date('10 April 2017'),
+      to: new Date('10 April 2019'),
       type: 1,
-      position: 'Frontend Developer'
+      position: 'Frontend Developer',
+      description: 'Works on Paygear backoffice panel and create Paygear push notification service.'
     },
     {
       title: 'Mahna',
-      from: new Date('May 2013'),
-      to: new Date('April 2017'),
+      from: new Date('10 May 2013'),
+      to: new Date('10 April 2017'),
       type: 1,
-      position: 'Full-stack Developer'
+      position: 'Full-stack Developer',
+      description: 'Works on Mahna E2E call-center project as System Designer, Frontend Developer, and Backend Developer.'
     },
+  ],
+  openSourceProjects: [
+    {
+      title: 'Framevuerk',
+      as: 0,
+      description: 'Multi language/direction UI framework based on VueJS including most usable components like Datepicker and Dropdown.',
+      link: 'https://framevuerk.com'
+    },
+    {
+      title: 'Hazy',
+      as: 0,
+      description: 'Secure service to send and receive anonymous messages.',
+      link: 'https://hazyapp.com'
+    },
+    {
+      title: 'IDate',
+      as: 0,
+      description: 'Iranian Date constractor for Javascript, Just like native javascript Date.',
+      link: 'https://github.com/nainemom/idate'
+    },
+    {
+      title: 'Nemojy',
+      as: 0,
+      description: 'A minimal desktop app to browsing and using emojies.',
+      link: 'https://github.com/nainemom/nemojy'
+    }
   ]
 }
