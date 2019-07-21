@@ -1,4 +1,5 @@
 import '../styles/style.scss'
+import me from './me.js'
 
 const $app = document.getElementById('app')
 
@@ -6,10 +7,7 @@ const header = require('./parts/header.htm')
 $app.innerHTML += header
 
 const objective = require('./parts/objective.htm')
-const start = 1367350200000
-const end = new Date().getTime()
-const exp = Math.round((end - start) / 31536000000)
-$app.innerHTML += objective.replace('{{experience}}', exp)
+$app.innerHTML += objective.replace('{{experience}}', me.experience())
 
 const skills = require('./parts/skills.htm')
 $app.innerHTML += skills
