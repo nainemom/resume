@@ -12,7 +12,6 @@ $app.innerHTML += require('./parts/skills.htm')
 $app.innerHTML += require('./parts/work-exprience.htm')
 $app.innerHTML += require('./parts/opensource-projects.htm')
 
-// $app.innerHTML = $app.innerHTML.replace('{{experience}}', me.experience())
 $app.innerHTML = utils.applyEvals($app.innerHTML)
 
 setTimeout(() => {
