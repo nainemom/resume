@@ -10,6 +10,16 @@ const self = {
       </div>
     `
   },
+  headerLinksTag(items) {
+    let ret = ''
+    items.forEach((item, index) => {
+      ret += `<a href="${item.link}" target="_blank">${item.title}</a>`
+      if (index + 1 !== items.length) {
+        ret += ' | '
+      }
+    })
+    return ret
+  },
   openSourceProjectTag(item) {
     return `
       <div class="list-section margin-v padding-h">
