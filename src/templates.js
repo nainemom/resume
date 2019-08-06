@@ -1,9 +1,16 @@
 const self = {
   workExpTag(item) {
+    let months;
+    const d1 = new Date(item.from)
+    const d2 = new Date(item.to === 'present' ? Date.now() : item.to)
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth() + 1;
+    months += d2.getMonth();
+    months = months || 0
     return `
       <div class="list-section margin-v padding-h">
         <div>
-          <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (${item.type === 1 ? 'Full-Time' : 'Part-Time'}) </i>
+          <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (${item.type === 1 ? 'Full-Time' : 'Part-Time'}) (~${months} Months)</i>
         </div>
         <h4> ${item.position} </h4>
         <p> ${item.description} </p>
@@ -24,7 +31,7 @@ const self = {
     return `
       <div class="list-section margin-v padding-h">
         <div>
-          <h3 class="inline-block"> ${item.title} </h3> - <i> as ${item.as === 0 ? 'Maintainer' : 'Contributer'}  </i> - <a href="${item.link}" target="_blank">Access Link</a>
+          <h3 class="inline-block"> ${item.title} </h3> - <i> as ${item.as === 0 ? 'Creator - Maintainer' : 'Contributer'}  </i> - <a href="${item.link}" target="_blank">Access Link</a>
         </div>
         <p> ${item.description} </p>
       </div>
