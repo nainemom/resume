@@ -5,6 +5,8 @@ export default {
     const end = new Date().getTime()
     return `~${Math.round((end - start) / 31536000000)}`
   },
+  mail: 'nainemom [at_sign] gmail.com',
+  phone: '+989365586015',
   links: [
     {
       key: 'github',
@@ -45,7 +47,7 @@ export default {
       to: new Date('10 April 2019'),
       type: 0,
       position: 'Frontend Developer - Platform Designer',
-      description: 'Helps to design hole platform and specifically works on persian/english version of HotelOneClick backoffice panel.'
+      description: 'Helps to design whole platform and specifically works on persian/english version of HotelOneClick backoffice panel.'
     },
     {
       title: 'Paygear',
