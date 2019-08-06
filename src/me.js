@@ -5,6 +5,23 @@ export default {
     const end = new Date().getTime()
     return `~${Math.round((end - start) / 31536000000)}`
   },
+  links: [
+    {
+      key: 'github',
+      title: 'Github',
+      link: 'https://github.com/nainemom'
+    },
+    {
+      key: 'linkedin',
+      title: 'Linkedin',
+      link: 'https://www.linkedin.com/in/amir-momenian-58073780'
+    },
+    {
+      key: 'twitter',
+      title: 'Twitter',
+      link: 'https://twitter.com/nainemom'
+    }
+  ],
   workExpriences: [
     {
       title: 'Snapp',
