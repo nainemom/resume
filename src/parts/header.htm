@@ -1,12 +1,11 @@
 <div id="header" class="flex wrap row text-center">
-  <div class="profile-pic"></div>
   <div class="info">
     <h2> Amir Momenian </h2>
     <div>
-      <label> Email: </label> nainemom[at]gmail.com
+      <label> Mail: </label> {{ me.mail }}
     </div>
     <div>
-      <label> Phone: </label> +98-9365586015
+      <label> Phone: </label> {{ me.phone }}
     </div>
     <div>
       {{ templates.headerLinksTag(me.links) }}
