@@ -18,24 +18,15 @@ body {
   margin: 0 auto;
 }
 
-.profile-pic {
-  display: inline-block;
-  width: 90px;
-  max-width: 90px;
-  height: 90px;
-  min-height: 90px;
-  background-image: url(../assets/picture.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .inline-block {
   display: inline-block;
 }
 
 .text-center {
   text-align: center;
+}
+.text-justify {
+  text-align: justify;
 }
 .text-start {
   text-align: left;
@@ -90,28 +81,4 @@ body {
   color: #fff;
   padding: 3px 10px;
   display: inline-block;
-}
-
-#header {
-
-  & > .info {
-    display: inline-block;
-    text-align: left;
-  }
-  @media screen and (max-width: 480px) {
-    & > .info {
-      flex-grow: 2;
-      width: 100%;
-      min-width: 100%;
-      text-align: center;
-    }
-  }
-  @media screen and (min-width: 480px) {
-    & > .info {
-      margin-left: 15px;
-      line-height: 1.4;
-      // padding-left: 15px;
-      // border-left: solid 1px $color-light;
-    }
-  }
 }
