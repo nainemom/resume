@@ -66,7 +66,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Amir Momenian - CV',
+      title: 'Amir Momenian - Resume',
       filename: 'index.html',
       template: path.join(rootDir, 'public/template.html')
     })
