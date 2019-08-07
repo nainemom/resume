@@ -10,18 +10,18 @@ const self = {
     return `
       <div class="list-section margin-v padding-h">
         <div>
-          <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (${item.type === 1 ? 'Full-Time' : 'Part-Time'}) (~${months} Months)</i>
+          <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (~${months} Months)</i>
         </div>
         <h4> ${item.position} </h4>
         <p> ${item.description} </p>
       </div>
     `
   },
-  headerLinksTag(items) {
-    let ret = ''
-    items.forEach((item, index) => {
+  headerLinksTag(me) {
+    let ret = `<a href="mailto:${me.mail}" title="${me.mail}">Send Email</a> | <a href="callto:${me.phone}" title="${me.phone}">Phone Call</a> | `
+    me.links.forEach((item, index) => {
       ret += `<a href="${item.link}" target="_blank">${item.title}</a>`
-      if (index + 1 !== items.length) {
+      if (index + 1 !== me.links.length) {
         ret += ' | '
       }
     })
