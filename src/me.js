@@ -5,7 +5,8 @@ export default {
     const end = new Date().getTime()
     return `~${Math.round((end - start) / 31536000000)}`
   },
-  mail: 'nainemom [at_sign] gmail.com',
+  name: 'Amir Momenian',
+  mail: 'nainemom@gmail.com',
   phone: '+989365586015',
   links: [
     {
