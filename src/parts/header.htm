@@ -1,14 +1,8 @@
-<div id="header" class="flex wrap row text-center">
+<div id="header" class="text-center">
   <div class="info">
-    <h1> Amir Momenian </h1>
+    <h1> {{ me.name }} </h1>
     <div>
-      <label> Mail: </label> {{ me.mail }}
-    </div>
-    <div>
-      <label> Phone: </label> {{ me.phone }}
-    </div>
-    <div>
-      {{ templates.headerLinksTag(me.links) }}
+      {{ templates.headerLinksTag(me) }}
     </div>
   </div>
 </div>
