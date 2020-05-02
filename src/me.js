@@ -32,7 +32,7 @@ export default {
       to: 'present',
       type: 1,
       position: 'Frontend Developer',
-      description: 'Part of frontend team who works on Snapp PWA and Blog and other internal projects. I also manage staging of projects (development to production) of frontend team projects.'
+      description: 'Part of frontend team who works on Snapp PWA with React library. After beta launchs of PWA, I moved to Backoffice team as senior frontend developer to start new backoffice client version.'
     },
     {
       title: 'Paygear Tunisia',
