@@ -31,7 +31,7 @@ const self = {
     return `
       <div class="list-section margin-v padding-h">
         <div>
-          <h3 class="inline-block"> ${item.title} </h3> - <i> as ${item.as === 0 ? 'Creator - Maintainer' : 'Contributer'}  </i> - <a href="${item.link}" target="_blank">Access Link</a>
+          <h3 class="inline-block"> ${item.title} </h3> - <i> as ${item.as === 0 ? 'Creator - Maintainer' : 'Contributer'}  </i> ${item.accessLink && ` - <a href="${item.accessLink}" target="_blank">Access Link</a>`} - <a href="${item.githubLink}" target="_blank">Github Link</a>
         </div>
         <p> ${item.description} </p>
       </div>
