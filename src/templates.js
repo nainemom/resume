@@ -6,7 +6,7 @@ const self = {
     months = (d2.getFullYear() - d1.getFullYear()) * 12;
     months -= d1.getMonth() + 1;
     months += d2.getMonth();
-    months = months || 0
+    months = months > 0 ? months : 0
     return `
       <div class="list-section margin-v padding-h">
         <div>
