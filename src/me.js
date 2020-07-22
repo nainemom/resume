@@ -27,12 +27,20 @@ export default {
   ],
   workExpriences: [
     {
-      title: 'Snapp',
-      from: new Date('10 May 2019'),
+      title: 'Cafe Bazar',
+      from: new Date('18 July 2020'),
       to: 'present',
       type: 1,
       position: 'Frontend Developer (Full-Time Job)',
-      description: 'Part of frontend team who works on Snapp PWA with React library. After beta launchs of PWA, I moved to Backoffice team as senior frontend developer to start new backoffice client version using Vue.'
+      description: 'Part of frontend team.'
+    },
+    {
+      title: 'Snapp',
+      from: new Date('10 May 2019'),
+      to: new Date('15 July 2020'),
+      type: 1,
+      position: 'Frontend Developer (Full-Time Job)',
+      description: 'Part of frontend team who works on Snapp PWA with React. I\'ve done Snapp-UI-Kit React version at that time and just after beta launchs of PWA, I moved to Backoffice team as a leader of frontend team to start new Backoffice client version using Vue.'
     },
     {
       title: 'Paygear Tunisia',
