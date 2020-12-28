@@ -1,16 +1,13 @@
 const self = {
   workExpTag(item) {
-    let months;
-    const d1 = new Date(item.from)
-    const d2 = new Date(item.to === 'present' ? Date.now() : item.to)
-    months = (d2.getFullYear() - d1.getFullYear()) * 12;
-    months -= d1.getMonth() + 1;
-    months += d2.getMonth();
-    months = months > 0 ? months : 0
+    const d1 = new Date(item.from).getTime();
+    const d2 = item.to === 'present' ? Date.now() : new Date(item.to).getTime();
+    const offsetDays = (d2 - d1) / 86400000;
+    const offsetMonths = Math.round(offsetDays / 30);
     return `
       <div class="list-section margin-v padding-h">
         <div>
-          <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (~${months} Months)</i>
+          <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (~${offsetMonths} Months)</i>
         </div>
         <h4> ${item.position} </h4>
         <p> ${item.description} </p>
