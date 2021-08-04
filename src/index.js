@@ -1,4 +1,4 @@
-import '../styles/style.scss'
+import '../styles/style.css'
 
 global.utils = require('./utils.js').default
 global.templates = require('./templates.js').default
