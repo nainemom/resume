@@ -27,15 +27,17 @@ export default {
   ],
   workExpriences: [
     {
-      title: 'Cafe Bazar',
+      title: 'Cafe Bazaar',
+      info: 'Cafe Bazaar is the most popular Android AppStore for Persian users with +46 million user.',
       from: new Date('18 July 2020'),
       to: 'present',
       type: 1,
       position: 'Frontend Developer (Full-Time Job)',
-      description: 'Part of frontend team.'
+      description: 'Part of frontend team.',
     },
     {
       title: 'Snapp',
+      info: 'Snapp is the largest ride-hailing application in the Middle East with ~40 million user and ~2 million rides per day.',
       from: new Date('10 May 2019'),
       to: new Date('15 July 2020'),
       type: 1,
@@ -60,6 +62,7 @@ export default {
     },
     {
       title: 'Paygear',
+      info: 'Paygear is a subset of Parsian Bank providing Mobile-Banking/Online-Wallet mobile application.',
       from: new Date('10 April 2017'),
       to: new Date('10 April 2019'),
       type: 1,
@@ -68,11 +71,12 @@ export default {
     },
     {
       title: 'Mahna',
+      info: 'Mahna is a multi-functions company launched at 2009 to provide B2B like softwares including Telecommunications, GIS, and VoIP services to customers.',
       from: new Date('10 May 2013'),
       to: new Date('10 April 2017'),
       type: 1,
       position: 'Full-stack Developer (Full-Time Job)',
-      description: 'Works on Mahna E2E call-center project as Full-stack (both Back-end and Front-end side) Developer.'
+      description: 'Works on Mahna Call-Center project as Full-stack developer.'
     },
   ],
   openSourceProjects: [
