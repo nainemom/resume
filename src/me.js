@@ -19,11 +19,6 @@ export default {
       title: 'Linkedin',
       link: 'https://www.linkedin.com/in/amir-momenian-58073780'
     },
-    {
-      key: 'twitter',
-      title: 'Twitter',
-      link: 'https://twitter.com/nainemom'
-    }
   ],
   workExpriences: [
     {
@@ -33,7 +28,6 @@ export default {
       to: 'present',
       type: 1,
       position: 'Frontend Developer (Full-Time Job)',
-      description: 'Part of frontend team.',
     },
     {
       title: 'Snapp',
@@ -42,7 +36,6 @@ export default {
       to: new Date('15 July 2020'),
       type: 1,
       position: 'Frontend Developer (Full-Time Job)',
-      description: 'Part of frontend team who works on Snapp PWA with React. I\'ve done Snapp-UI-Kit React version at that time and just after beta launchs of PWA, I moved to Backoffice team as a leader of frontend team to start new Backoffice client version using Vue.'
     },
     {
       title: 'Paygear Tunisia',
@@ -50,15 +43,15 @@ export default {
       to: new Date('10 April 2019'),
       type: 0,
       position: 'Frontend Developer (Part-Time Job)',
-      description: 'Works on arabic/english version of Paygear backoffice panel to lunch in Tunisia.'
+      description: 'I worked on arabic/english version of Paygear backoffice panel to lunch in Tunisia.'
     },
     {
       title: 'HotelOneClick',
       from: new Date('10 March 2018'),
       to: new Date('10 April 2019'),
       type: 0,
-      position: 'Frontend Developer - Platform Designer (Part-Time/Remote Job)',
-      description: 'Helps to design whole platform and specifically works on persian/english version of HotelOneClick backoffice panel.'
+      position: 'Frontend Developer - Platform Designer (Part-Time Job)',
+      description: 'Helped to design whole platform and specifically worked on Persian/English versions of Website/Backoffice.'
     },
     {
       title: 'Paygear',
@@ -76,7 +69,6 @@ export default {
       to: new Date('10 April 2017'),
       type: 1,
       position: 'Full-stack Developer (Full-Time Job)',
-      description: 'Works on Mahna Call-Center project as Full-stack developer.'
     },
   ],
   openSourceProjects: [
