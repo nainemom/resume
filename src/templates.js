@@ -7,15 +7,15 @@ const self = {
     return `
       <div class="list-section margin-v padding-h">
         <div>
-          <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (~${offsetMonths} Months)</i>
+          <h3 class="inline-block"> ${item.title} </h3> - <i> ${self.dateFormat(item.from)} to ${self.dateFormat(item.to)} (~${offsetMonths} Months)</i>
         </div>
         <h4> ${item.position} </h4>
-        <p> ${item.info} </p>
+        <p> ${item.info || item.description} </p>
       </div>
     `
   },
   headerLinksTag(me) {
-    let ret = `<a href="mailto:${me.mail}" title="${me.mail}">Send Email</a> | <a href="callto:${me.phone}" title="${me.phone}">Phone Call</a> | `
+    let ret = `<a href="mailto:${me.mail}" title="${me.mail}">${me.mail.replace('@', '[at]')}</a> | <a href="callto:${me.phone}" title="${me.phone}">${me.phone}</a> | `
     me.links.forEach((item, index) => {
       ret += `<a href="${item.link}" target="_blank">${item.title}</a>`
       if (index + 1 !== me.links.length) {
@@ -35,10 +35,11 @@ const self = {
     `
   },
   dateFormat(date) {
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     if (date === 'present') {
       return 'Present'
     } else {
-      return `${date.getMonth() + 1}-${date.getFullYear()}`
+      return `${monthNames[date.getMonth()]} ${date.getFullYear()}`
     }
   }
 }
