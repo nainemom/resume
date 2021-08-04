@@ -55,6 +55,10 @@ body {
   padding-right: 15px;
 }
 
+.padding-l {
+  padding-left: 15px;
+}
+
 .margin-v {
   margin-top: 15px;
   margin-bottom: 15px;
