@@ -10,7 +10,7 @@ const self = {
           <h3 class="inline-block"> ${item.title} </h3> - <i> From ${self.dateFormat(item.from)} To ${self.dateFormat(item.to)} (~${offsetMonths} Months)</i>
         </div>
         <h4> ${item.position} </h4>
-        <p> ${item.description} </p>
+        <p> ${item.info} </p>
       </div>
     `
   },
