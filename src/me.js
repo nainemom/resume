@@ -8,18 +8,8 @@ export default {
   name: 'Amir Momenian',
   mail: 'nainemom@gmail.com',
   phone: '+989365586015',
-  links: [
-    {
-      key: 'github',
-      title: 'Github',
-      link: 'https://github.com/nainemom'
-    },
-    {
-      key: 'linkedin',
-      title: 'Linkedin',
-      link: 'https://www.linkedin.com/in/amir-momenian-58073780'
-    },
-  ],
+  github: 'https://github.com/nainemom',
+  linkedin: 'https://www.linkedin.com/in/amir-momenian-58073780',
   workExpriences: [
     {
       title: 'Cafe Bazaar',
