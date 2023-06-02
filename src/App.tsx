@@ -27,7 +27,7 @@ function App() {
         <Column className="w-full print:w-1/3 lg:w-1/3 grow shrink-0 flex flex-col gap-y-8 p-4 print:bg-zinc-100 lg:bg-zinc-100">
           <Section className="text-center">
             <Picture objective={objective} />
-            <Biography className="print:hidden" objective={objective} />
+            <Biography className="print:hidden lg:hidden" objective={objective} />
           </Section>
           <Section>
             <Contacts contacts={contacts} profiles={profiles} objective={objective} />
