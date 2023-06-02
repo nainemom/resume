@@ -1,0 +1,1 @@
+published [here](https://resume.nainemom.com)
