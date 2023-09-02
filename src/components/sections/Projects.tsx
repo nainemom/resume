@@ -24,8 +24,8 @@ export default function Projects(props: ProjectsProps) {
               <span className="text-zinc-700 text-xs">as</span>
               <h4 className="inline text-base font-semibold">{ formatRole(project.role) }</h4>
             </div>
-            <div className="text-sm space-x-1 flex flex-row items-center mb-1">
-              <BoxIcon type="regular" name="link" className="w-4" />
+            <div className="text-sm space-x-1 flex flex-row flex-wrap items-center mb-1">
+              <BoxIcon type="regular" name="link" className="w-4 shrink-0" />
               <a href={project.link} target="_blank" className="underline underline-offset-4">{ project.link.replace('https://', '') }</a>
             </div>
             <Markdown className="text-zinc-700 text-base pt-1">{ project.description }</Markdown>
