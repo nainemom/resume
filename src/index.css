@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 html, body, #root {
-  @apply max-w-7xl m-auto w-auto;
+  @apply max-w-7xl m-auto w-full;
 }

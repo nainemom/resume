@@ -63,8 +63,8 @@ const CONTACT_FIELD_TYPE_TO_HREF_PREFIX: Record<ContactsFieldProps['type'], fals
 function ContactsField(props: ContactsFieldProps) {
   const hrefPrefix = CONTACT_FIELD_TYPE_TO_HREF_PREFIX[props.type];
   return (
-    <div className="flex flex-row flex-nowrap gap-x-1 items-center text-base">
-      <BoxIcon {...CONTACT_FIELD_TYPE_TO_BOX_ICON_PROPS[props.type]} className="w-6" />
+    <div className="flex flex-row flex-nowrap gap-x-2 items-center text-base">
+      <BoxIcon {...CONTACT_FIELD_TYPE_TO_BOX_ICON_PROPS[props.type]} className="h-5 shrink-0" />
       {
         hrefPrefix === false ?
           <>{ props.value }</> : (
@@ -94,7 +94,7 @@ export default function Contacts(props: ContactsProps) {
     })),
   ]
   return (
-    <div className={cx('flex flex-col gap-y-1 w-full text-sm', props.className)}>
+    <div className={cx('flex flex-row lg:flex-col print:flex-col flex-wrap gap-1 w-full text-sm', props.className)}>
       { fields.map((field) => (
         <ContactsField key={field.type + field.value} {...field} />
       ))}

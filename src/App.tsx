@@ -1,5 +1,3 @@
-import { QueryClient, QueryClientProvider } from 'react-query'
-
 import objective from '@/database/objective';
 import profiles from '@/database/profiles';
 import contacts from '@/database/contacts';
@@ -17,38 +15,32 @@ import Column from './components/layout/Column';
 import Contacts from './components/sections/Contacts';
 import Picture from './components/sections/Picture';
 
-const queryClient = new QueryClient()
-
-
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Layout className="flex flex-col print:flex-row lg:flex-row">
-        <Column className="w-full print:w-1/3 lg:w-1/3 grow shrink-0 flex flex-col gap-y-8 p-4 print:bg-zinc-100 lg:bg-zinc-100">
-          <Section className="text-center">
-            <Picture objective={objective} />
-            <Biography className="print:hidden lg:hidden" objective={objective} />
-          </Section>
-          <Section>
-            <Contacts contacts={contacts} profiles={profiles} objective={objective} />
-          </Section>
-          <Section title="Projects">
-            <Projects projects={projects} />
-          </Section>
-        </Column>
-        <Column className="grow flex flex-col gap-y-8 p-4 bg-white">
-          <Section className="hidden print:block lg:block">
-            <Biography objective={objective} />
-          </Section>
-          <Section title="Skills">
-            <Skills skills={skills} />
-          </Section>
-          <Section title="Work Experiences">
-            <Expriences experiences={experiences} />
-          </Section>
-        </Column>
-      </Layout>
-    </QueryClientProvider>
+    <Layout className="grid grid-cols-1 lg:grid-cols-3 print:grid-cols-3 gap-4 p-6 lg:p-0 print:p-0">
+      <Column className="contents lg:block print:block col-span-1 space-y-8 p-6 bg-zinc-100">
+        <Section className="order-1 lg:order-none print:order-none text-center">
+          <Picture objective={objective} />
+        </Section>
+        <Section className="order-3 lg:order-none print:order-none">
+          <Contacts contacts={contacts} profiles={profiles} objective={objective} />
+        </Section>
+        <Section title="Projects" className="order-5 lg:order-none print:order-none">
+          <Projects projects={projects} />
+        </Section>
+      </Column>
+      <Column className="contents lg:block print:block col-span-1 lg:col-span-2 print:col-span-2 space-y-8 p-6 bg-white">
+        <Section className="order-2 lg:order-none print:order-none text-center lg:text-start print:text-start">
+          <Biography objective={objective} />
+        </Section>
+        <Section title="Skills" className="order-4 lg:order-none print:order-none">
+          <Skills skills={skills} />
+        </Section>
+        <Section title="Work Experiences" className="order-6 lg:order-none print:order-none">
+          <Expriences experiences={experiences} />
+        </Section>
+      </Column>
+    </Layout>
   )
 }
 

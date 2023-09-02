@@ -10,7 +10,7 @@ type LayoutProps = {
 export default function Layout(props: LayoutProps) {
   return (
     <div
-      className={cx('flex flex-row', props.className)}
+      className={props.className}
     >
       { props.children }
     </div>

@@ -1,5 +1,6 @@
 export interface Exprience {
   company: {
+    icon: string,
     title: string,
     description: string,
     website: string,
