@@ -22,13 +22,14 @@ export default function Expriences(props: ExpriencesProps) {
               <div className="flex flex-row gap-1 items-center">
                 { experience.company.icon && (<img src={experience.company.icon} className="w-6 h-6 rounded inline mr-2" />) }
                 <h3 className="font-bold text-lg">{ experience.company.title }</h3>
-                <span className="text-zinc-600 text-xs mt-1"> در نقش </span>
+                <span className="text-zinc-600 text-xs mt-1"> به عنوان </span>
                 <h4 className="text-lg font-semibold">{ experience.role.title }</h4>
               </div>
-              <div className="space-x-1">
-                <span className="font-normal text-sm inline pl-1">{ formatDate(experience.period[0]) }</span>
+              <div className="flex gap-1 items-center">
+                <span className="font-normal text-sm inline" dir="ltr">{ formatDate(experience.period[0]) }</span>
                 <span className="text-zinc-600 text-xs">تا</span>
-                <span className="font-normal text-sm inline">{ formatDate(experience.period[1]) } ({calcPeriodSize(experience.period)})</span>
+                <span className="font-normal text-sm inline" dir="ltr">{ formatDate(experience.period[1]) }</span>
+                <span className="font-normal text-xs inline" dir="rtl">({calcPeriodSize(experience.period)})</span>
               </div>
               <Markdown className="text-zinc-600 text-xs">{ experience.company.description }</Markdown>
             </div>

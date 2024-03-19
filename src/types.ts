@@ -3,7 +3,7 @@ export interface Exprience {
     icon?: string,
     title: string,
     description: string,
-    website: string,
+    website?: string,
   }
   period: [Date, Date] | [Date],
   role: {

@@ -2,6 +2,7 @@ import { cx } from "@/utils/cx";
 import { Profile, Contact, Objective } from '@/types';
 import BoxIcon, { BoxIconProps } from "../general/BoxIcon";
 import Markdown from "../general/Markdown";
+import { toPersianDigits } from "@/utils/string";
 
 type ContactsProps = {
   contacts: Contact[]
@@ -67,9 +68,9 @@ function ContactsField(props: ContactsFieldProps) {
       <BoxIcon {...CONTACT_FIELD_TYPE_TO_BOX_ICON_PROPS[props.type]} className="h-5 shrink-0" />
       {
         hrefPrefix === false ?
-          <>{ props.value }</> : (
+          <>{  props.value }</> : (
           <a className="underline underline-offset-4" href={`${hrefPrefix}${props.value}`} target="__blank" aria-label={CONTACT_FIELD_TYPE_TO_TITLE[props.type]}>
-            { props.value.replace('https://', '') }
+            { toPersianDigits(props.value.replace('https://', '')) }
           </a>
         )
       }

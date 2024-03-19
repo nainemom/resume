@@ -20,17 +20,19 @@ export default function Educations(props: EducationsProps) {
             <div className="text-base space-x-1">
               <h3 className="font-bold inline text-base pl-1">{ edication.achievement }</h3>
               { edication.name && (
-                <>
+                <div>
                   <span className="text-zinc-700 text-xs"> در </span>
-                  <h4 className="inline text-base font-semibold">{ edication.name }</h4>
-                </>
+                  <h4 className="inline text-sm font-semibold">{ edication.name }</h4>
+                </div>
               ) }
             </div>
             { edication.period && (
-              <div className="space-x-1">
-                <span className="font-normal text-xs inline pl-1">{ formatDate(edication.period[0]) }</span>
+              <div className="flex items-center gap-1">
+                <span className="font-normal text-xs inline" dir="ltr">{ formatDate(edication.period[0]) }</span>
                 <span className="text-zinc-600 text-xs">تا</span>
-                <span className="font-normal text-xs inline">{ formatDate(edication.period[1]) } ({calcPeriodSize(edication.period)})</span>
+                <span className="font-normal text-xs inline" dir="ltr">{ formatDate(edication.period[1]) }</span>
+                <span className="font-normal text-xs inline" dir="rtl">({calcPeriodSize(edication.period)})</span>
+                
               </div>
             ) }
           </div>

@@ -4,7 +4,11 @@ export function formatDate(date?: Date) {
   if (!date) {
     return 'اکنون'
   }
-  return new Intl.DateTimeFormat('fa-IR').format(date);
+  return new Intl.DateTimeFormat('fa-IR', {
+    // day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(date);
 }
 
 export function calcPeriodSize(period: [Date] | [Date, Date]) {
