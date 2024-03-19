@@ -10,7 +10,7 @@ export const experiences: Exprience[] = [
     company: {
       // icon: CafeBazaarIcon,
       title: 'راسا سازان عصر نوین (پاکسیت)',
-      description: 'شرکت پاکسیت خدماتی مثل فروش گیفت کارت‌های بازی‌های پلتفرم‌های مختلف و ارائه سرویس‌های مرتبط با استریم را انجام می‌دهد.',
+      description: 'پاکسیت بخشی از شرکت کافه‌بازار بوده که خدماتی مثل فروش گیفت بازی‌های پلتفرم‌های مختلف را انجام می‌دهد.',
       // website: 'https://cafebazaar.ir',
     },
     period: [new Date('23 October 2023')],
@@ -24,7 +24,7 @@ export const experiences: Exprience[] = [
     company: {
       // icon: SnappIcon,
       title: ' مهد دانشمندان کوچک',
-      description: 'مهد دانشمندان کوچک با هدف ارتقای سلامت زیستی، روانی و اجتماعی کودکان خدماتی مثل آموزش مهارت‌های فردی و اجتماعی گوناگونی را به کودکان زیر شش سال ازائه می‌دهد.',
+      description: 'مهد دانشمندان کوچک چهت ارتقای سلامت کودکان خدمات آموزش مهارت‌های گوناگون را به کودکان ازائه می‌دهد.',
       // website: 'https://snapp.ir/',
     },
     period: [new Date('22 June 2021'), new Date('23 October 2023')],
@@ -38,7 +38,7 @@ export const experiences: Exprience[] = [
     company: {
       // icon: HotelOneClickIcon,
       title: 'خانه لگو',
-      description: 'مجموعه خانه لگو با هدف تقویت مهارت‌های گفتاری و زبانی، مهارت‌های اجتماعی، توانایی حل مسئله و مهارت‌های ریاضی و هوش و خلاقیت و … به ارائه دروس و سرفصل‌های مرتبط در قالب داستان می‌پردازد.',
+      description: 'مجموعه خانه لگو با هدف تقویت مهارت‌های گفتاری و زبانی و توانایی حل مسئله و مهارت‌های ریاضی به ارائه دروس و سرفصل‌های مرتبط در قالب داستان می‌پردازد.',
       // website: 'https://hoteloneclick.com/',
     },
     period: [new Date('23 October 2021'), new Date('23 October 2023')],
@@ -55,10 +55,24 @@ export const experiences: Exprience[] = [
       description: 'مؤسسه هنرآوران به ارائه خدمات آموزشی در حوزه هنر و رشته‌های صنایع دستی می‌پردازد.',
       // website: 'https://paygear.ir/',
     },
-    period: [new Date('23 October 2014'), new Date('21 March 2015')],
+    period: [new Date('25 October 2015'), new Date('24 August 2017')],
     role: {
       title: 'مربی هنر',
-      description: 'همکاری در پروژه ی احیای نمایش خیمه شب بازی.',
+      description: 'برگزاری کلاس‌های بافته‌های سنتی مثل گریم و فرش و تابلو فرش، نقشه‌کشی و نقشه‌خوانی فرش‌های دست‌باف.',
+    },
+    type: 'part-time',
+  },
+  {
+    company: {
+      // icon: RaadIcon,
+      title: 'موزه اقامتگاه بومگردی کاشان',
+      description: 'بخشی از اقامتگاه که بعنوان موزه اسباب‌بازی‌ها و عروسک‌های خیمه‌شب‌بازی زمان قاجار استفاده می‌شود..',
+      // website: 'https://paygear.ir/',
+    },
+    period: [new Date('23 October 2014'), new Date('21 March 2015')],
+    role: {
+      title: 'موزه‌گردان',
+      description: 'همکاری در پروژه ی احیای موزه و نمایش خیمه شب بازی.',
     },
     type: 'part-time',
   },
@@ -66,7 +80,7 @@ export const experiences: Exprience[] = [
     company: {
       // icon: MahnaIcon,
       title: 'سازمان صمت همدان',
-      description: 'سازمان صمت در راستای چابک‌سازی و کوچک‌کردن دولت، هر نوع فعالیت اقتصادی بخش خصوصی در زمینه بازرگانی داخلی و خارجی، تولیدات صنعتی، بخش‌های معدن و اصناف، زا زیرنظر خود انجام می‌دهد.',
+      description: 'سازمان صمت هر نوع فعالیت اقتصادی بخش خصوصی در زمینه بازرگانی داخلی و خارجی، تولیدات صنعتی، بخش‌های معدن و اصناف زا زیرنظر دازد.',
       // website: 'https://mahnagroup.com/',
     },
     period: [new Date('22 May 2014'), new Date('23 August 2014')],

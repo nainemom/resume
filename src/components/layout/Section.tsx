@@ -14,7 +14,7 @@ export default function Section(props: SectionProps) {
       className={cx(props.className, 'relative')}
     >
       { props.title && (
-        <h2 className="bg-black text-white p-2 inline-block uppercase font-bold text-xl mb-4">
+        <h2 className="bg-black text-white p-1 inline-block uppercase font-bold text-xl mb-4">
           { props.title }
         </h2>
       ) }
