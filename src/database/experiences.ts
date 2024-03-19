@@ -8,73 +8,73 @@ import MahnaIcon from '@/assets/company-icons/mahna.jpg';
 export const experiences: Exprience[] = [
   {
     company: {
-      icon: CafeBazaarIcon,
-      title: 'Cafe Bazaar',
-      description: 'Cafe Bazaar is the most popular Android AppStore for Persian users with +46 million user.',
+      // icon: CafeBazaarIcon,
+      title: 'شرکت راسا سازان عصر نوین (پاکسیت)',
+      description: 'شرکت پاکسیت خدماتی مثل فروش گیفت کارت‌های بازی‌های پلتفرم‌های مختلف و ارائه سرویس‌های مرتبط با استریم را انجام می‌دهد.',
       website: 'https://cafebazaar.ir',
     },
-    period: [new Date('18 July 2020')],
+    period: [new Date('23 October 2023')],
     role: {
-      title: 'Frontend Developer',
-      description: 'There was a lots of o work variety inside CafeBazaar within this period for me. I just mention my impressive roles on big products: cafebazaar.ir website as owner/maintainer, Cafebazaar careers website as creator/owner, Cafebazaar Video tab (archived) as developer, KiKi backoffice panel / main project website as creator/owner, panjereh.ir backoffice panel as creator/owner and paxit.ir pwa as creator/owner. I also touched a lots of areas that cannot be mentioned due to cafebazaar NDA.',
+      title: 'پشتیبان',
+      description: 'آشنایی با درگاه‌های بانکی و سیستم‌های مالی، گزارش مغایرت‌گیری درگاه‌ها، گزارش فروش ماهانه پاکسیت، افزایش مهارت کار تیمی به صورت آنلاین (دورکاری)، افزایش توانایی حل مسئله در زمان کوتاه، ارتباط مؤثر با کاربر از طریق پشتیبانی.',
     },
     type: 'full-time',
   },
   {
     company: {
-      icon: SnappIcon,
-      title: 'Snapp',
-      description: 'Snapp is the largest ride-hailing application in the Middle East with ~40 million user and ~2 million rides per day.',
+      // icon: SnappIcon,
+      title: ' مهد دانشمندان کوچک',
+      description: 'مهد دانشمندان کوچک با هدف ارتقای سلامت زیستی، روانی و اجتماعی کودکان خدماتی مثل آموزش مهارت‌های فردی و اجتماعی گوناگونی را به کودکان زیر شش سال ازائه می‌دهد.',
       website: 'https://snapp.ir/',
     },
-    period: [new Date('10 May 2019'), new Date('15 July 2020')],
+    period: [new Date('22 June 2021'), new Date('23 October 2023')],
     role: {
-      title: 'Frontend Developer',
-      description: 'Maintainced and released second Snapp PWA version and initiated Snapp UI-Kit for web within this process along with 6 other developers. I also worked on Snapp Backoffice Panel as a lead developer with 2 other front-end developers.',
+      title: 'مربی هنر و مسئول دفتر',
+      description: 'گردآوری اطلاعات به شکل جامع، ثبت اطلاعات افراد در یک سیستم یکپارچه، بروزرسانی سیستم مالی مهد، ارائه الگوها و طرح‌های هنری، ارائه فعالیت‌های مهد در قالب محتوای تصویری، فعالیت در فضای مجازی و افزایش مهارت در آموزش کودکان.',
     },
     type: 'full-time',
   },
   {
     company: {
-      icon: HotelOneClickIcon,
-      title: 'HotelOneClick',
-      description: 'HotelOneClick is one of the top online hotel booking, tour booking and car booking in Iran.',
+      // icon: HotelOneClickIcon,
+      title: 'خانه لگو',
+      description: 'مجموعه خانه لگو با هدف تقویت مهارت‌های گفتاری و زبانی، مهارت‌های اجتماعی، توانایی حل مسئله و مهارت‌های ریاضی و هوش و خلاقیت و … به ارائه دروس و سرفصل‌های مرتبط در قالب داستان می‌پردازد.',
       website: 'https://hoteloneclick.com/',
     },
-    period: [new Date('10 March 2018'), new Date('10 April 2019')],
+    period: [new Date('23 October 2021'), new Date('23 October 2023')],
     role: {
-      title: 'Full-stack Developer',
-      description: 'Helped to design whole platform from begining and specifically worked on Persian/English versions of Website/Backoffice.'
+      title: 'مربی',
+      description: 'بروزرسانی نحوه آموزش سرفصل‌های دروس دوره ‌های Basic و ESM، گردآوری تصاویر و ویدئوهای مرتبط با دروس جهت تفهیم و ارتباط موثر کودکان با مفاهیم و درک بهتر.'
+    },
+    type: 'full-time',
+  },
+  {
+    company: {
+      // icon: RaadIcon,
+      title: 'مؤسسه هنرآوران',
+      description: 'مؤسسه هنرآوران به ارائه خدمات آموزشی در حوزه هنر و رشته‌های صنایع دستی می‌پردازد.',
+      website: 'https://paygear.ir/',
+    },
+    period: [new Date('23 October 2014'), new Date('21 March 2015')],
+    role: {
+      title: 'مربی هنر',
+      description: 'همکاری در پروژه ی احیای نمایش خیمه شب بازی',
     },
     type: 'part-time',
   },
   {
     company: {
-      icon: RaadIcon,
-      title: 'RaadSense',
-      description: 'RaadSense is a subset of Parsian Bank providing Mobile-Banking/Online-Wallet mobile application.',
-      website: 'https://paygear.ir/',
-    },
-    period: [new Date('10 April 2017'), new Date('10 April 2019')],
-    role: {
-      title: 'Frontend Developer',
-      description: 'Worked on RaadSense backoffice panel as maintainer and created RaadSense push notification service.',
-    },
-    type: 'full-time',
-  },
-  {
-    company: {
-      icon: MahnaIcon,
-      title: 'Mahna',
-      description: 'Mahna is a multi-functions company providing B2B softwares including Telecommunications, GIS, and VoIP services.',
+      // icon: MahnaIcon,
+      title: 'سازمان صمت استان همدان',
+      description: 'سازمان صمت در راستای چابک‌سازی و کوچک‌کردن دولت، هر نوع فعالیت اقتصادی بخش خصوصی در زمینه بازرگانی داخلی و خارجی، تولیدات صنعتی، بخش‌های معدن و اصناف، زا زیرنظر خود انجام مس‌دهد.',
       website: 'https://mahnagroup.com/',
     },
-    period: [new Date('10 May 2013'), new Date('10 April 2017')],
+    period: [new Date('22 May 2014'), new Date('23 August 2014')],
     role: {
-      title: 'Full-stack Developer',
-      description: 'Worked on Selling product with PHP, Jquery, NodeJS, MySql, and Javascript (Vannila).',
+      title: 'کارآموز اتاق فرش',
+      description: 'هماهنگی بین اتاق‌های فرش همدان جهت برگزاری نمایشگاه فرش دستباف، جمع‌آوری اطلاعات کارگاه‌های رنگرزی و تهیه گزارش جامع از فعالیت‌های مرتبط',
     },
-    type: 'full-time',
+    type: 'part-time',
   },
 ];
 

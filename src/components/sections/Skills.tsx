@@ -10,7 +10,7 @@ type SkillsProps = {
 
 export default function Skills(props: SkillsProps) {
   return (
-    <div className={cx('flex flex-col items-start gap-y-2 shrink', props.className)}>
+    <div className={cx('grid grid-cols-2 gap-4', props.className)}>
       {
         props.skills.map((skill) => (
           <div className="grow w-full">

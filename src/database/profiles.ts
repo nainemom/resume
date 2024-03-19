@@ -1,17 +1,13 @@
 import { Profile } from '@/types';
 
 const profiles: Profile[] = [
-  {
-    type: 'github',
-    link: 'https://github.com/nainemom'
-  },
-  {
-    type: 'linkedin',
-    link: 'https://linkedin.com/in/nainemom'
-  },
+  // {
+  //   type: 'linkedin',
+  //   link: 'https://linkedin.com/in/mitra-bahreman-657b9a174'
+  // },
   {
     type: 'telegram',
-    link: 'https://t.me/nainemom'
+    link: 'https://t.me/Mitrabahreman'
   }
 ];
 

@@ -1,6 +1,6 @@
 export interface Exprience {
   company: {
-    icon: string,
+    icon?: string,
     title: string,
     description: string,
     website: string,
@@ -19,6 +19,13 @@ export interface Project {
   link: string
   role: 'contributer' | 'maintainer'
   status: 'active' | 'archived'
+}
+
+
+export interface Education {
+  name?: string
+  achievement: string
+  period?: [Date, Date] | [Date],
 }
 
 export interface Objective {

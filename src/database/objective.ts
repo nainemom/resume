@@ -11,10 +11,10 @@ const careerYears = (() => {
 
 const objective: Objective = {
   image,
-  name: 'Amir Momenian',
-  role: 'Front-end Developer',
-  location: 'Tehran, Iran',
-  info: `Accomplished various projects as frontend developer with **~${careerYears}** years of experience. Contributed to some of the open-source projects such as Nuxt and Stringz and developed some other open-source projects including Framevuerk, iDate, Modela, and Viska.`,
+  name: 'میترا بهرمان',
+  role: 'پشتیبان',
+  location: 'همدان، ایران',
+  info: `پشتیبانی آنلاین سایت دارای روابط عمومی و اجتماعی، همچنین علاقمند به فعالیت‌های گروهی و پیشرفت و رشد در کار هستم.`,
 };
 
 export default objective;

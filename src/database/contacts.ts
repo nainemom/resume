@@ -3,11 +3,11 @@ import { Contact } from "@/types";
 const contacts: Contact[] = [
   {
     type: 'phone',
-    value: '+989365586015'
+    value: '+989353241747'
   },
   {
     type: 'email',
-    value: 'nainemom@gmail.com'
+    value: 'mitra.m.bahreman@gmail.com'
   }
 ];
 
