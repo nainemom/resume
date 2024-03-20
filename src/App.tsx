@@ -35,7 +35,7 @@ function App() {
         </Section>
       </Column>
       <Column className="block col-span-2 space-y-8 p-6 bg-white">
-        <Section title="توانایی‌ها" className="order-none">
+      <Section title="توانایی‌ها" className="order-none">
           <Skills skills={skills} />
         </Section>
         <Section title="سوابق شغلی" className="order-none">

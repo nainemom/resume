@@ -11,12 +11,12 @@ type ExpriencesProps = {
 
 export default function Expriences(props: ExpriencesProps) {
   return (
-    <div className={cx('flex flex-col gap-y-3 items-start', props.className)}>
+    <div className={cx('flex flex-col gap-y-4 items-start', props.className)}>
       {
         props.experiences.map((experience) => (
           <div
             key={experience.period[0].getTime()}
-            className="border-r-4 px-3 py-0 border-r-black w-full space-y-2"
+            className="border-r-4 px-3 py-1 border-r-black w-full space-y-2"
           >
             <div>
               <div className="flex flex-row gap-1 items-center">
@@ -33,7 +33,7 @@ export default function Expriences(props: ExpriencesProps) {
               </div>
               <Markdown className="text-zinc-600 text-xs">{ experience.company.description }</Markdown>
             </div>
-            <Markdown className="text-zinc-800 text-base col-span-2">{ experience.role.description }</Markdown>
+            <Markdown className="text-zinc-800 text-base col-span-2 pt-2">{ experience.role.description }</Markdown>
           </div>
         ))
       }

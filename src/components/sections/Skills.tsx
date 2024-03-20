@@ -13,9 +13,9 @@ export default function Skills(props: SkillsProps) {
     <div className={cx('grid grid-cols-2 gap-4', props.className)}>
       {
         props.skills.map((skill) => (
-          <div className="grow w-full">
+          <div className="grow w-full py-1">
             <h3 className="border-b-current border-b-4 pb-2 font-bold text-lg mb-2">{ skill.title }</h3>
-            <Markdown className="text-base">{ skill.description }</Markdown>
+            <Markdown className="text-base whitespace-pre-line">{ skill.description }</Markdown>
           </div>
         ))
       }

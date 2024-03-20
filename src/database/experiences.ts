@@ -9,7 +9,7 @@ export const experiences: Exprience[] = [
   {
     company: {
       // icon: CafeBazaarIcon,
-      title: 'راسا سازان عصر نوین (پاکسیت)',
+      title: 'پاکسیت',
       description: 'پاکسیت بخشی از شرکت کافه‌بازار بوده که خدماتی مثل فروش گیفت بازی‌های پلتفرم‌های مختلف را انجام می‌دهد.',
       // website: 'https://cafebazaar.ir',
     },

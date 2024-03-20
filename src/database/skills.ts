@@ -6,8 +6,8 @@ export const skills: Skill[] = [
     description: 'توانایی خود کنترلی، **مسئولیت پذیری**، **مهارت متقاعد سازی**، **مهارت همدلی**، **انعطاف پذیری** و شناسایی نیازهای مشتری.',
   },
   {
-    title: 'مهارت‌های نرم افزاری',
-    description: 'آشنا با نرم‌افزارهای **Microsoft Office**, **Google Docs**, **Corel Draw**, **Adobe Illustrator** و **Adobe Photoshop**.',
+    title: 'آشنا با نرم‌افزارهای:',
+    description: '**Microsoft Office**, **Google Docs**, **Corel Draw**, **Adobe Illustrator** و **Adobe Photoshop**.',
   },
   {
     title: 'مهارت‌های نرم',
