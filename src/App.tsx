@@ -20,7 +20,7 @@ import Educations from './components/sections/Edications';
 function App() {
   return (
     <Layout className="grid grid-cols-3 gap-4 p-0">
-      <Column className="block col-span-1 space-y-8 p-6 bg-zinc-100">
+      <Column className="block col-span-1 space-y-8 p-6 bg-zinc-200">
         <Section className="order-none text-center">
           <Picture objective={objective} />
         </Section>

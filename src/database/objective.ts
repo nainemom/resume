@@ -1,6 +1,6 @@
 import { Objective } from '@/types';
 import experiences from "./experiences";
-import image from '@/assets/me.jpg';
+import image from '@/assets/mitra.png';
 
 const careerYears = (() => {
   const careerStart = Math.min(...experiences.map((exp) => exp.period[0].getTime()));
