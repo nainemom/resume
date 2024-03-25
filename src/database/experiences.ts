@@ -58,7 +58,7 @@ export const experiences: Exprience[] = [
     period: [new Date('25 October 2015'), new Date('24 August 2017')],
     role: {
       title: 'مربی هنر',
-      description: 'برگزاری کلاس‌های بافته‌های سنتی مثل گریم و فرش و تابلو فرش، نقشه‌کشی و نقشه‌خوانی فرش‌های دست‌باف.',
+      description: 'برگزاری کلاس‌های بافته‌های سنتی مثل گلیم و فرش و تابلو فرش، نقشه‌کشی و نقشه‌خوانی فرش‌های دست‌باف.',
     },
     type: 'part-time',
   },
