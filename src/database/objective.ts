@@ -14,7 +14,7 @@ const objective: Objective = {
   name: 'Amir Momenian',
   role: 'Front-end Developer',
   location: 'Tehran, Iran',
-  info: `Accomplished various projects as frontend developer with **~${careerYears}** years of experience. Contributed to some of the open-source projects such as Nuxt and Stringz and developed some other open-source projects including Framevuerk, iDate, Modela, and Viska.`,
+  info: `Accomplished various projects as frontend developer with **~${careerYears}** years of experience. Contributed to some of the open-source projects such as Nuxt and Stringz and developed some other open-source projects including Framevuerk, iDate, Hazy, and Viska.`,
 };
 
 export default objective;
