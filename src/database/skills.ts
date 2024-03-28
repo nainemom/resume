@@ -12,8 +12,8 @@ export const skills: Skill[] = [
   {
     title: 'Server-Side',
     description: 'In my career there were a lot of times that I faced to server jobs as an **Amateur** developer. ' +
-      'I understand **GNU/Linux** basics, also I can write a server-side code with **NodeJS**, ' +
-      'connect it to DBs like **MySQL** and **MongoDB**, handle queues with **RabbitMQ** and ' + 
+      'I understand **GNU/Linux** basics, also I can write a server-side scripts with **NodeJS**, ' +
+      'manage relational DBs like **MySQL**, **Postgres and Non relational ones like **MongoDB**. I know how to handle queues with **RabbitMQ** and ' + 
       'I also have various expirenced with **Docker**, **Kubernetees**, **Amazon AWS**, **Gitlab CI**, and **Github Actions**.',
   },
 ];
