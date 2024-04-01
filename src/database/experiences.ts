@@ -30,7 +30,7 @@ export const experiences: Exprience[] = [
     period: [new Date('10 May 2019'), new Date('15 July 2020')],
     role: {
       title: 'Frontend Developer',
-      description: 'Maintainced and released second Snapp PWA version and initiated Snapp UI-Kit for web within this process along with 6 other developers. I also worked on Snapp Backoffice Panel as a lead developer with 2 other front-end developers.',
+      description: 'I Maintainced and released second Snapp PWA version and initiated Snapp UI-Kit for web along with 6 other front-end developers. I also worked on Snapp Backoffice Panel as a lead developer with 2 other front-end developers.',
     },
     type: 'full-time',
   },
@@ -44,7 +44,7 @@ export const experiences: Exprience[] = [
     period: [new Date('10 March 2018'), new Date('10 April 2019')],
     role: {
       title: 'Full-stack Developer',
-      description: 'Helped to design whole platform from begining and specifically worked on Persian/English versions of Website/Backoffice.'
+      description: 'I helped design the entire platform from scratch and specifically worked on the Farsi/English versions of the website/back-office of this startup.'
     },
     type: 'part-time',
   },
@@ -58,7 +58,7 @@ export const experiences: Exprience[] = [
     period: [new Date('10 April 2017'), new Date('10 April 2019')],
     role: {
       title: 'Frontend Developer',
-      description: 'Worked on RaadSense backoffice panel as maintainer and created RaadSense push notification service.',
+      description: 'I worked on RaadSense backoffice panel as maintainer and created RaadSense push notification service.',
     },
     type: 'full-time',
   },
@@ -72,7 +72,7 @@ export const experiences: Exprience[] = [
     period: [new Date('10 May 2013'), new Date('10 April 2017')],
     role: {
       title: 'Full-stack Developer',
-      description: 'Worked on Selling product with PHP, Jquery, NodeJS, MySql, and Javascript (Vannila).',
+      description: 'I specifically worked on the VoIP product. The product has a lots of feature including varous type of reports, charts, configs, abd more. Important technologies used in the front and back side of product was Asterisk, PHP, Jquery, NodeJS, MySql, and KnockoutJS.',
     },
     type: 'full-time',
   },
