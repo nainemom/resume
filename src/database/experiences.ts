@@ -1,6 +1,9 @@
 import { Exprience } from '@/types';
 import CafeBazaarIcon from '@/assets/company-icons/cafebazaar.png';
 import SnappIcon from '@/assets/company-icons/snapp.png';
+// import MDKIcon from '@/assets/company-icons/mdk.png';
+import LegoIcon from '@/assets/company-icons/lego.jpg';
+import HonarIcon from '@/assets/company-icons/honar.jpg';
 import HotelOneClickIcon from '@/assets/company-icons/hoteloneclick.png';
 import RaadIcon from '@/assets/company-icons/raad.png';
 import MahnaIcon from '@/assets/company-icons/mahna.jpg';
@@ -8,8 +11,8 @@ import MahnaIcon from '@/assets/company-icons/mahna.jpg';
 export const experiences: Exprience[] = [
   {
     company: {
-      // icon: CafeBazaarIcon,
-      title: 'پاکسیت',
+      icon: CafeBazaarIcon,
+      title: 'کافه‌بازار (تیم پاکسیت)',
       description: 'پاکسیت بخشی از شرکت کافه‌بازار بوده که خدماتی مثل فروش گیفت بازی‌های پلتفرم‌های مختلف را انجام می‌دهد.',
       // website: 'https://cafebazaar.ir',
     },
@@ -22,7 +25,7 @@ export const experiences: Exprience[] = [
   },
   {
     company: {
-      // icon: SnappIcon,
+      // icon: MDKIcon,
       title: ' مهد دانشمندان کوچک',
       description: 'مهد دانشمندان کوچک چهت ارتقای سلامت کودکان خدمات آموزش مهارت‌های گوناگون را به کودکان ازائه می‌دهد.',
       // website: 'https://snapp.ir/',
@@ -36,7 +39,7 @@ export const experiences: Exprience[] = [
   },
   {
     company: {
-      // icon: HotelOneClickIcon,
+      // icon: LegoIcon,
       title: 'خانه لگو',
       description: 'مجموعه خانه لگو با هدف تقویت مهارت‌های گفتاری و زبانی و توانایی حل مسئله و مهارت‌های ریاضی به ارائه دروس و سرفصل‌های مرتبط در قالب داستان می‌پردازد.',
       // website: 'https://hoteloneclick.com/',
@@ -50,7 +53,7 @@ export const experiences: Exprience[] = [
   },
   {
     company: {
-      // icon: RaadIcon,
+      // icon: HonarIcon,
       title: 'مؤسسه هنرآوران',
       description: 'مؤسسه هنرآوران به ارائه خدمات آموزشی در حوزه هنر و رشته‌های صنایع دستی می‌پردازد.',
       // website: 'https://paygear.ir/',
@@ -62,20 +65,20 @@ export const experiences: Exprience[] = [
     },
     type: 'part-time',
   },
-  {
-    company: {
-      // icon: RaadIcon,
-      title: 'موزه اقامتگاه بومگردی کاشان',
-      description: 'بخشی از اقامتگاه که بعنوان موزه اسباب‌بازی‌ها و عروسک‌های خیمه‌شب‌بازی زمان قاجار استفاده می‌شود..',
-      // website: 'https://paygear.ir/',
-    },
-    period: [new Date('23 October 2014'), new Date('21 March 2015')],
-    role: {
-      title: 'موزه‌گردان',
-      description: 'همکاری در پروژه ی احیای موزه و نمایش خیمه شب بازی.',
-    },
-    type: 'part-time',
-  },
+  // {
+  //   company: {
+  //     // icon: RaadIcon,
+  //     title: 'موزه اقامتگاه بومگردی کاشان',
+  //     description: 'بخشی از اقامتگاه که بعنوان موزه اسباب‌بازی‌ها و عروسک‌های خیمه‌شب‌بازی زمان قاجار استفاده می‌شود..',
+  //     // website: 'https://paygear.ir/',
+  //   },
+  //   period: [new Date('23 October 2014'), new Date('21 March 2015')],
+  //   role: {
+  //     title: 'موزه‌گردان',
+  //     description: 'همکاری در پروژه ی احیای موزه و نمایش خیمه شب بازی.',
+  //   },
+  //   type: 'part-time',
+  // },
   {
     company: {
       // icon: MahnaIcon,

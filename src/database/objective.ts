@@ -1,6 +1,6 @@
 import { Objective } from '@/types';
 import experiences from "./experiences";
-import image from '@/assets/mitra.png';
+import image from '@/assets/mitra.jpg';
 
 const careerYears = (() => {
   const careerStart = Math.min(...experiences.map((exp) => exp.period[0].getTime()));
@@ -14,7 +14,7 @@ const objective: Objective = {
   name: 'میترا بهرمان',
   role: 'پشتیبان',
   location: 'همدان، ایران',
-  info: `در حال حاظر پشتیبان سرویس پاکسیت و در کل علاقه‌مند به فعالیت در حوزه آی‌تی و پیشرفت در کار هستم. از دید خودم روابط عمومی و اجتماعی خوبی دارم و نیروی مناسبی برای کارهای تیمی هستم.`,
+  info: `پشتیبانی آنلاین سایت، دارای توانایی های گسترده در امور اداری، اجرایی، آماری و گزارش دهی نموداری. توانمند در ارائه‌ی گزارش‌های شفاف و قابل فهم، حل مسائل و مدیریت زمان. به دنبال فرصتی برای به کارگیری تجربیاتم در کار گروهی و رشد و پیشرفت سازمانی و شغلی هستم.`,
 };
 
 export default objective;
