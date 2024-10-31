@@ -70,7 +70,7 @@ function ContactsField(props: ContactsFieldProps) {
         hrefPrefix === false ?
           <>{  props.value }</> : (
           <a className="underline underline-offset-4" href={`${hrefPrefix}${props.value}`} target="__blank" aria-label={CONTACT_FIELD_TYPE_TO_TITLE[props.type]}>
-            { toPersianDigits(props.value.replace('https://', '')) }
+            { toPersianDigits(props.value.replace('https://', '').replace('linkedin.com/in/', '')) }
           </a>
         )
       }
