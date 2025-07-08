@@ -1,10 +1,9 @@
 import { cx } from "@/utils/cx";
-import { Skill } from '@/types';
-import Markdown from "@/components/general/Markdown";
+import Markdown from "@/components/Markdown";
 
 
 type SkillsProps = {
-  skills: Skill[]
+  skills: Resume['skills']
   className?: string
 }
 

@@ -1,15 +1,14 @@
 import { cx } from "@/utils/cx";
-import { Project } from '@/types';
-import BoxIcon from "../general/BoxIcon";
-import Markdown from "../general/Markdown";
+import BoxIcon from "@/components/BoxIcon";
+import Markdown from "@/components/Markdown";
 
 
 type ProjectsProps = {
-  projects: Project[]
+  projects: Resume['projects']
   className?: string
 }
 
-function formatRole(role: Project['role']) {
+function formatRole(role: Resume['projects'][number]['role']) {
   return role.charAt(0).toUpperCase() + role.slice(1).toLowerCase();
 }
 

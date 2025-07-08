@@ -1,21 +1,21 @@
-import objective from '@/database/objective';
-import profiles from '@/database/profiles';
-import contacts from '@/database/contacts';
-import experiences from '@/database/experiences';
-import skills from '@/database/skills';
-import projects from '@/database/projects';
+import Section from './layout/Section';
+import Biography from './sections/Biography';
+import Expriences from './sections/Experiences';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import Layout from './layout/Layout';
+import Column from './layout/Column';
+import Contacts from './sections/Contacts';
+import Picture from './sections/Picture';
 
-import Section from '@/components/layout/Section';
-import Biography from '@/components/sections/Biography';
-import Expriences from '@/components/sections/Experiences';
-import Skills from '@/components/sections/Skills';
-import Projects from '@/components/sections/Projects';
-import Layout from './components/layout/Layout';
-import Column from './components/layout/Column';
-import Contacts from './components/sections/Contacts';
-import Picture from './components/sections/Picture';
-
-function App() {
+export default function DefaultTemplate({ resume: {
+  objective,
+  contacts,
+  profiles,
+  projects,
+  skills,
+  experiences,
+} }: TemplateProps) {
   return (
     <Layout className="grid grid-cols-1 lg:grid-cols-3 print:grid-cols-3 gap-4 p-6 lg:p-0 print:p-0">
       <Column className="contents lg:block print:block col-span-1 space-y-8 p-6 bg-zinc-100">
@@ -43,5 +43,3 @@ function App() {
     </Layout>
   )
 }
-
-export default App;

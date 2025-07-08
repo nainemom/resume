@@ -1,10 +1,9 @@
 import { cx } from "@/utils/cx";
-import { Exprience } from '@/types';
-import Markdown from "../general/Markdown";
+import Markdown from "@/components/Markdown";
 
 
 type ExpriencesProps = {
-  experiences: Exprience[]
+  experiences: Resume['experiences']
   className?: string
 }
 
@@ -16,7 +15,7 @@ function formatDate(date?: Date) {
   return `${MONTH_NAMES[date.getMonth()]} ${date.getFullYear()}`;
 }
 
-function calcPeriodSize(period: Exprience['period']) {
+function calcPeriodSize(period: Resume['experiences'][number]['period']) {
   const d1 = period[0].getTime();
   const d2 = !period[1] ? Date.now() : period[1].getTime();
   const offsetDays = (d2 - d1) / 86400000;

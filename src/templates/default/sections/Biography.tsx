@@ -1,9 +1,8 @@
 import { cx } from "@/utils/cx";
-import { Objective } from '@/types';
-import Markdown from "@/components/general/Markdown";
+import Markdown from "@/components/Markdown";
 
 type BiographyProps = {
-  objective: Objective
+  objective: Resume['objective']
   className?: string
 }
 

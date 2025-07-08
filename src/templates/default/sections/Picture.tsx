@@ -1,8 +1,7 @@
 import { cx } from "@/utils/cx";
-import { Objective } from '@/types';
 
 type PictureProps = {
-  objective: Objective
+  objective: Resume['objective']
   className?: string
 }
 

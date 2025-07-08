@@ -10,6 +10,8 @@ export default defineConfig({
     alias: {
       // eslint-disable-next-line no-undef
       '@': resolve(__dirname, './src'),
+      // eslint-disable-next-line no-undef
+      '!': resolve(__dirname, './content'),
     },
   },
 });

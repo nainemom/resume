@@ -1,12 +1,10 @@
 import { cx } from "@/utils/cx";
-import { Profile, Contact, Objective } from '@/types';
-import BoxIcon, { BoxIconProps } from "../general/BoxIcon";
-import Markdown from "../general/Markdown";
+import BoxIcon, { BoxIconProps } from "@/components/BoxIcon";
 
 type ContactsProps = {
-  contacts: Contact[]
-  profiles: Profile[]
-  objective: Objective
+  contacts: Resume['contacts']
+  profiles: Resume['profiles']
+  objective: Resume['objective']
   className?: string
 }
 
