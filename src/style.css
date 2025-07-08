@@ -3,5 +3,6 @@
 html,
 body,
 #root {
+	font-family: "Figtree", sans-serif;
 	@apply max-w-7xl m-auto w-full;
 }

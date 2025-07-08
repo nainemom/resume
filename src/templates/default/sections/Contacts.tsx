@@ -75,10 +75,6 @@ function ContactsField(props: ContactsFieldProps) {
 					{props.value.replace("https://", "")}
 				</a>
 			)}
-			<span>
-				{" "}
-				<slot name="value" />{" "}
-			</span>
 		</div>
 	);
 }

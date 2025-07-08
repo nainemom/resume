@@ -16,10 +16,8 @@ export default function Projects(props: ProjectsProps) {
 	return (
 		<div className={clsx("flex flex-col gap-y-4 items-start", props.className)}>
 			{props.projects.map((project) => (
-				<div
-					key={project.title}
-					className="border-l-current border-l-4 pl-2 text-black w-full"
-				>
+				<div key={project.title} className="relative text-black w-full ps-3">
+					<div className="absolute h-full w-1 bg-black rounded-full left-0 top-0 shrink-0" />
 					<div className="text-base space-x-1">
 						<h3 className="font-bold inline text-base">{project.title}</h3>
 						<span className="text-zinc-700 text-xs">as</span>

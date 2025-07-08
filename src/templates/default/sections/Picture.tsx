@@ -9,11 +9,14 @@ export default function Picture(props: PictureProps) {
 	return (
 		<div
 			className={clsx(
-				"w-44 h-44 rounded-full overflow-hidden inline-block border-solid border-4 border-zinc-700",
+				"size-44 rounded-full overflow-hidden inline-block border-solid border-4 border-zinc-700",
 				props.className,
 			)}
 		>
-			<img src={props.objective.image} className="w-full h-full" />
+			<img
+				src={props.objective.image}
+				className="size-full grayscale-50 contrast-[115%]"
+			/>
 		</div>
 	);
 }

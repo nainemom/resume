@@ -42,28 +42,29 @@ function calcPeriodSize(period: Resume["experiences"][number]["period"]) {
 
 export default function Expriences(props: ExpriencesProps) {
 	return (
-		<div className={clsx("flex flex-col gap-y-4 items-start", props.className)}>
+		<div className={clsx("flex flex-col gap-y-3 items-start", props.className)}>
 			{props.experiences.map((experience) => (
 				<div
 					key={experience.period[0].getTime()}
-					className="border-l-4 px-3 py-1 border-l-black w-full space-y-3"
+					className="relative px-3 py-1 border-l-black w-full space-y-2"
 				>
+					<div className="absolute h-full w-1 bg-black rounded-full left-0 top-0 shrink-0" />
 					<div>
 						<div className="flex flex-row gap-1 items-center">
 							<img
 								src={experience.company.icon}
-								className="w-6 h-6 rounded inline mr-2"
+								className="size-6 rounded inline mr-0"
 							/>
 							<h3 className="font-bold text-lg">{experience.company.title}</h3>
 							<span className="text-zinc-600 text-xs mt-1">as</span>
 							<h4 className="text-lg font-semibold">{experience.role.title}</h4>
 						</div>
 						<div className="space-x-1">
-							<span className="font-normal text-xs inline">
+							<span className="text-xs inline">
 								{formatDate(experience.period[0])}
 							</span>
 							<span className="text-zinc-600 text-xs">to</span>
-							<span className="font-normal text-xs inline">
+							<span className="text-xs inline">
 								{formatDate(experience.period[1])} (
 								{calcPeriodSize(experience.period)})
 							</span>
