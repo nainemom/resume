@@ -1,5 +1,3 @@
 import Default from "./default";
 
-export {
-  Default,
-}
+export { Default };

@@ -1,36 +1,33 @@
 {
-  "name": "nainemom-resume",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx",
-    "lint:fix": "eslint . --ext ts,tsx --fix",
-    "preview": "vite preview",
-    "deploy": "npm run build -- --base /resume && node deploy.js"
-  },
-  "dependencies": {
-    "marked": "^5.0.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/marked": "^5.0.0",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
-    "@vitejs/plugin-react-swc": "^3.0.0",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.38.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
-    "gh-pages": "^5.0.0",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2",
-    "typescript": "^5.0.2",
-    "vite": "^4.3.2"
-  }
+	"name": "nainemom-resume",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "biome check .",
+		"lint:ci": "biome ci .",
+		"lint:fix": "biome check --fix --unsafe .",
+		"preview": "vite preview",
+		"deploy": "npm run build -- --base /resume && node deploy.js"
+	},
+	"dependencies": {
+		"clsx": "^2.1.1",
+		"marked": "^16.0.0",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-icons": "^5.5.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.1.0",
+		"@tailwindcss/vite": "^4.1.11",
+		"@types/react": "^19.1.8",
+		"@types/react-dom": "^19.1.6",
+		"@vitejs/plugin-react": "^4.6.0",
+		"gh-pages": "^5.0.0",
+		"tailwindcss": "^4.1.11",
+		"typescript": "^5.8.3",
+		"vite": "^7.0.3"
+	}
 }

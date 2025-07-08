@@ -1,14 +1,19 @@
-import { cx } from "@/utils/cx";
+import clsx from "clsx";
 
 type PictureProps = {
-  objective: Resume['objective']
-  className?: string
-}
+	objective: Resume["objective"];
+	className?: string;
+};
 
 export default function Picture(props: PictureProps) {
-  return (
-    <div className={cx('w-44 h-44 rounded-full overflow-hidden inline-block border-solid border-4 border-zinc-700', props.className)}>
-      <img src={props.objective.image} className="w-full h-full" />
-    </div>
-  );  
+	return (
+		<div
+			className={clsx(
+				"w-44 h-44 rounded-full overflow-hidden inline-block border-solid border-4 border-zinc-700",
+				props.className,
+			)}
+		>
+			<img src={props.objective.image} className="w-full h-full" />
+		</div>
+	);
 }
