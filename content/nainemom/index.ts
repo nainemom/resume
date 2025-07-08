@@ -1,15 +1,17 @@
 import cafeBazaarIcon from "./company-icons/cafebazaar.png";
 import hotelOneClickIcon from "./company-icons/hoteloneclick.png";
-import mahnaIcon from "./company-icons/mahna.jpg";
+import mahnaIcon from "./company-icons/mahna.png";
 import raadIcon from "./company-icons/raad.png";
 import snappIcon from "./company-icons/snapp.png";
+import urbanateIcon from "./company-icons/urbanate.png";
+import wisdomiseIcon from "./company-icons/wisdomise.png";
 import profileImage from "./me.jpg";
 
 const CAREER_START = new Date("10 May 2013");
 
 const CAREER_YEARS = (() => {
 	const now = Date.now();
-	const YEAR_LENGTH = 31536000000;
+	const YEAR_LENGTH = 31_536_000_000;
 	return Math.round((now - CAREER_START.getTime()) / YEAR_LENGTH);
 })();
 
@@ -19,56 +21,34 @@ export default {
 		name: "Amir Momenian",
 		role: "Front-end Developer",
 		location: "Tehran, Iran",
-		info: `Accomplished various projects as frontend developer with **~${CAREER_YEARS}** years of experience. Contributed to some of the open-source projects such as Nuxt and Stringz and developed some other open-source projects including Framevuerk, iDate, Hazy, and Viska.`,
+		info: `Experienced Front-end Developer with **~${CAREER_YEARS}** years in web technologies. I have contributed to open-source projects like **Nuxt** and **Stringz**, and developed my own tools and frameworks including **Framevuerk**, **iDate**, **Hazy**, and **Viska**.`,
 	},
 	contacts: [
-		{
-			type: "phone",
-			value: "+989365586015",
-		},
-		{
-			type: "email",
-			value: "nainemom@gmail.com",
-		},
+		{ type: "phone", value: "+989365586015" },
+		{ type: "email", value: "nainemom@gmail.com" },
 	],
 	skills: [
 		{
 			title: "Client-Side",
 			description:
-				"I mostly worked as a frontend developer. " +
-				"I know how **Javascript** works. I worked with frameworks such as **Vue**, **Nuxt**, **React**, **Next**, **Remix** and **Typescript**. " +
-				"I've created various projects including **PWA**, Desktop Apps (with **Electron**), and Mobile Apps (with **Cordova**) and Tizen/WebOS apps (using web technologies). " +
-				"I understand how a Web-Project creates, maintains and works, so I just mention some other tools that I'm familier with: " +
-				"**Rollup**, **Vite**, **Webpack**, **CSS-Modules**, **TailwindCSS**, **Eslint**, **SSR libs**, **Pre-render libs**, **Cordova**, and more.",
+				"I specialize in modern Front-end development with strong expertise in **JavaScript** and **TypeScript**. I have built projects using **Vue**, **Nuxt**, **React**, **Next.js**, and **Remix**, and I am experienced in developing **PWAs**, desktop apps (**Electron**), hybrid mobile apps (**Cordova**), and Tizen/WebOS apps. I am well-versed in project architecture, performance optimization, and maintainability. My stack includes **Vite**, **Rollup**, **Webpack**, **TailwindCSS**, **CSS Modules**, **ESLint**, **SSR**, **pre-rendering**, and more.",
 		},
 		{
 			title: "Server-Side",
 			description:
-				"In my career there were a lot of times that I faced to server jobs as an **Amateur** developer. " +
-				"I understand **GNU/Linux** basics, also I can write a server-side scripts with **NodeJS**, " +
-				"manage relational DBs like **MySQL**, **Postgres** and Non relational ones like **MongoDB**. I know how to handle queues with **RabbitMQ** and " +
-				"I also have various expirenced with **Docker**, **Kubernetees**, **Amazon AWS**, **Gitlab CI**, and **Github Actions**.",
+				"I handle server-side tasks at an intermediate level. I work comfortably with **GNU/Linux**, **Node.js**, **NestJS**, and databases such as **MySQL**, **Postgres**, and **MongoDB**. I also have hands-on experience with **RabbitMQ**, **Docker**, **Kubernetes**, **AWS**, **GitLab CI**, and **GitHub Actions**.",
 		},
 	],
 	profiles: [
-		{
-			type: "github",
-			link: "https://github.com/nainemom",
-		},
-		{
-			type: "linkedin",
-			link: "https://linkedin.com/in/nainemom",
-		},
-		{
-			type: "telegram",
-			link: "https://t.me/nainemom",
-		},
+		{ type: "github", link: "https://github.com/nainemom" },
+		{ type: "linkedin", link: "https://linkedin.com/in/nainemom" },
+		{ type: "telegram", link: "https://t.me/nainemom" },
 	],
 	projects: [
 		{
 			title: "Framevuerk",
 			description:
-				"Multi language/direction UI framework based on VueJS including most usable components like Datepicker and Dropdown.",
+				"A multi-language/direction UI framework for Vue.js, featuring essential components like datepickers and dropdowns.",
 			link: "https://github.com/framevuerk/framevuerk",
 			role: "maintainer",
 			status: "archived",
@@ -76,43 +56,44 @@ export default {
 		{
 			title: "Windows 7 Preview",
 			description:
-				"Yet another OS preview via web technologies focused on Microsoft Windows 7.",
+				"A nostalgic Windows 7 simulation built entirely with web technologies.",
 			link: "https://github.com/nainemom/win7",
 			role: "maintainer",
 			status: "active",
 		},
 		{
 			title: "IDate",
-			description:
-				"Iranian Date constractor for Javascript, Just like native javascript Date.",
+			description: "A native-like Iranian date constructor for JavaScript.",
 			link: "https://github.com/nainemom/idate",
 			role: "maintainer",
 			status: "active",
 		},
 		{
 			title: "Guard",
-			description: "Encrypt and Decrypt Messages using RSA keys.",
+			description:
+				"A simple tool to encrypt and decrypt messages using RSA keys.",
 			link: "https://github.com/nainemom/guard",
 			role: "maintainer",
 			status: "active",
 		},
 		{
 			title: "Viska",
-			description: "An Anonymous Chat Service.",
+			description: "An anonymous chat service with privacy-first design.",
 			link: "https://github.com/nainemom/viska",
 			role: "maintainer",
 			status: "archived",
 		},
 		{
 			title: "Hazy",
-			description: "Secure service to send and receive anonymous messages.",
+			description:
+				"A secure service for sending and receiving anonymous messages.",
 			link: "https://github.com/hazy-app/webapp",
 			role: "maintainer",
 			status: "archived",
 		},
 		{
 			title: "Nemojy",
-			description: "A minimal desktop app to browsing and using emojies.",
+			description: "A minimal desktop app for browsing and using emojis.",
 			link: "https://github.com/nainemom/nemojy",
 			role: "maintainer",
 			status: "archived",
@@ -121,17 +102,49 @@ export default {
 	experiences: [
 		{
 			company: {
+				icon: wisdomiseIcon,
+				title: "Wisdomise",
+				description:
+					"A Swiss AI-powered CeDeFi platform that helps investors grow wealth through smart automation and crypto insights.",
+				website: "https://wisdomise.com/en",
+			},
+			period: [new Date("8 May 2024")],
+			role: {
+				title: "Front-end Developer",
+				description:
+					"Developed the main landing website and PWA using **Next.js**, **React**, **OneSignal**, **i18next**, **ECharts**, **Ant Design**, and **TailwindCSS**. Built interactive charts, integrated crypto **insights**, social sentiment, whale activity dashboards, and trading tools in a user-friendly interface.",
+			},
+			type: "full-time",
+		},
+		{
+			company: {
+				icon: urbanateIcon,
+				title: "Urbanate",
+				description:
+					"A Canada-based real estate investment platform that connects developers, property owners, and investors worldwide.",
+				website: "https://urbanate.com",
+			},
+			period: [new Date("13 July 2024")],
+			role: {
+				title: "Front-end Developer",
+				description:
+					"Developed Urbanate’s main landing and investor portal using **Next.js** and **TailwindCSS**, enabling developers to list properties and investors to pre-purchase and invest in exclusive opportunities.",
+			},
+			type: "part-time",
+		},
+		{
+			company: {
 				icon: cafeBazaarIcon,
 				title: "Cafe Bazaar",
 				description:
-					"Cafe Bazaar is the most popular Android AppStore for Persian users with +46 million user.",
+					"Iran’s leading Android app store, with over 46 million Persian-speaking users.",
 				website: "https://cafebazaar.ir",
 			},
-			period: [new Date("18 July 2020")],
+			period: [new Date("18 July 2020"), new Date("8 May 2024")],
 			role: {
-				title: "Frontend Developer",
+				title: "Front-end Developer",
 				description:
-					"There was a lots of o work variety inside CafeBazaar within this period for me. I just mention my impressive roles on big products: cafebazaar.ir website as owner/maintainer, Cafebazaar careers website as creator/owner, Cafebazaar Video tab (archived) as developer, KiKi backoffice panel / main project website as creator/owner, panjereh.ir backoffice panel as creator/owner and paxit.ir pwa as creator/owner. I also touched a lots of areas that cannot be mentioned due to cafebazaar NDA.",
+					"Led and maintained the **cafebazaar.ir** website, developed the careers site, the Video tab (archived), the KiKi back-office panel and site, the **panjereh.ir** panel, and the **paxit.ir** PWA. Collaborated on multiple confidential projects under NDA.",
 			},
 			type: "full-time",
 		},
@@ -140,14 +153,14 @@ export default {
 				icon: snappIcon,
 				title: "Snapp",
 				description:
-					"Snapp is the largest ride-hailing application in the Middle East with ~40 million user and ~2 million rides per day.",
+					"The largest ride-hailing app in the Middle East, serving ~40 million users and 2 million rides daily.",
 				website: "https://snapp.ir/",
 			},
 			period: [new Date("10 May 2019"), new Date("15 July 2020")],
 			role: {
-				title: "Frontend Developer",
+				title: "Front-end Developer",
 				description:
-					"I Maintainced and released second Snapp PWA version and initiated Snapp UI-Kit for web along with 6 other front-end developers. I also worked on Snapp Backoffice Panel as a lead developer with 2 other front-end developers.",
+					"Maintained and released Snapp’s second PWA version, co-developed the Snapp web UI kit, and led the Back-office Panel project with a small front-end team.",
 			},
 			type: "full-time",
 		},
@@ -156,14 +169,14 @@ export default {
 				icon: hotelOneClickIcon,
 				title: "HotelOneClick",
 				description:
-					"HotelOneClick is one of the top online hotel booking, tour booking and car booking in Iran.",
+					"One of Iran’s top online booking platforms for hotels, tours, and rental cars.",
 				website: "https://hoteloneclick.com/",
 			},
 			period: [new Date("10 March 2018"), new Date("10 April 2019")],
 			role: {
 				title: "Full-stack Developer",
 				description:
-					"I helped design the entire platform from scratch and specifically worked on the Farsi/English versions of the website/back-office of this startup.",
+					"Designed and built the platform’s core services, managing both Farsi and English versions of the website and its back-office.",
 			},
 			type: "part-time",
 		},
@@ -172,14 +185,14 @@ export default {
 				icon: raadIcon,
 				title: "RaadSense",
 				description:
-					"RaadSense is a subset of Parsian Bank providing Mobile-Banking/Online-Wallet mobile application.",
+					"A division of Parsian Bank, offering mobile banking and online wallet services.",
 				website: "https://paygear.ir/",
 			},
 			period: [new Date("10 April 2017"), new Date("10 April 2019")],
 			role: {
-				title: "Frontend Developer",
+				title: "Front-end Developer",
 				description:
-					"I worked on RaadSense backoffice panel as maintainer and created RaadSense push notification service.",
+					"Maintained and enhanced the RaadSense back-office panel, built the push notification service, and contributed to core systems using **Vue.js**, **Node.js**, **RabbitMQ**, **Framevuerk**, and **i18n**.",
 			},
 			type: "full-time",
 		},
@@ -188,14 +201,14 @@ export default {
 				icon: mahnaIcon,
 				title: "Mahna",
 				description:
-					"Mahna is a multi-functions company providing B2B softwares including Telecommunications, GIS, and VoIP services.",
+					"Provider of B2B software solutions for telecom, GIS, and VoIP services.",
 				website: "https://mahnagroup.com/",
 			},
 			period: [CAREER_START, new Date("10 April 2017")],
 			role: {
 				title: "Full-stack Developer",
 				description:
-					"I specifically worked on the VoIP product. The product has a lots of feature including varous type of reports, charts, configs, abd more. Important technologies used in the front and back side of product was Asterisk, PHP, Jquery, NodeJS, MySql, and KnockoutJS.",
+					"Worked mainly on the VoIP product, building reporting dashboards, charts, and configuration panels using **Asterisk**, **PHP**, **jQuery**, **Node.js**, **MySQL**, and **KnockoutJS**.",
 			},
 			type: "full-time",
 		},
