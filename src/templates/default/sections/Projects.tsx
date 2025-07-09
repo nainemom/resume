@@ -14,7 +14,7 @@ function formatRole(role: Resume["projects"][number]["role"]) {
 
 export default function Projects(props: ProjectsProps) {
 	return (
-		<div className={clsx("flex flex-col gap-y-4 items-start", props.className)}>
+		<div className={clsx("flex flex-col gap-y-3 items-start", props.className)}>
 			{props.projects.map((project) => (
 				<div key={project.title} className="relative text-black w-full ps-3">
 					<div className="absolute h-full w-1 bg-black rounded-full left-0 top-0 shrink-0" />
@@ -35,7 +35,7 @@ export default function Projects(props: ProjectsProps) {
 							{project.link.replace("https://", "")}
 						</a>
 					</div>
-					<Markdown className="text-zinc-700 text-base pt-1">
+					<Markdown className="text-zinc-700 text-base">
 						{project.description}
 					</Markdown>
 				</div>

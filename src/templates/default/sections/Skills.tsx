@@ -10,7 +10,7 @@ export default function Skills(props: SkillsProps) {
 	return (
 		<div
 			className={clsx(
-				"flex flex-col items-start gap-y-3 shrink",
+				"flex flex-col items-start gap-y-2 shrink",
 				props.className,
 			)}
 		>

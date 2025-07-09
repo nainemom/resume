@@ -46,7 +46,7 @@ export default function Expriences(props: ExpriencesProps) {
 			{props.experiences.map((experience) => (
 				<div
 					key={experience.period[0].getTime()}
-					className="relative px-3 py-1 border-l-black w-full space-y-2"
+					className="relative px-3 py-1 border-l-black w-full space-y-1"
 				>
 					<div className="absolute h-full w-1 bg-black rounded-full left-0 top-0 shrink-0" />
 					<div>

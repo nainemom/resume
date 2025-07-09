@@ -12,12 +12,18 @@ export default function DefaultTemplate({
 	resume: { objective, contacts, profiles, projects, skills, experiences },
 }: TemplateProps) {
 	return (
-		<Layout className="grid grid-cols-1 lg:grid-cols-3 print:grid-cols-3 gap-4 p-6 lg:p-0 print:p-0">
-			<Column className="contents lg:block print:block col-span-1 space-y-8 p-6 bg-zinc-100">
-				<Section className="order-1 lg:order-none print:order-none text-center">
+		<Layout className="grid grid-cols-1 lg:grid-cols-3 print:grid-cols-3 gap-3 p-3 lg:p-0 print:p-0">
+			<Column className="contents lg:block print:block col-span-1 space-y-3 p-3 bg-zinc-100">
+				<Section className="order-1 lg:hidden print:order-none text-center">
 					<Picture objective={objective} />
 				</Section>
-				<Section className="order-3 lg:order-none print:order-none">
+				<Section className="order-2 lg:order-none print:order-none text-center lg:text-start print:text-start">
+					<Biography objective={objective} />
+				</Section>
+				<Section
+					title="Contact Info"
+					className="order-3 lg:order-none print:order-none"
+				>
 					<Contacts
 						contacts={contacts}
 						profiles={profiles}
@@ -31,10 +37,7 @@ export default function DefaultTemplate({
 					<Projects projects={projects} />
 				</Section>
 			</Column>
-			<Column className="contents lg:block print:block col-span-1 lg:col-span-2 print:col-span-2 space-y-8 p-6 bg-white">
-				<Section className="order-2 lg:order-none print:order-none text-center lg:text-start print:text-start">
-					<Biography objective={objective} />
-				</Section>
+			<Column className="contents lg:block print:block col-span-1 lg:col-span-2 print:col-span-2 space-y-3 p-3 bg-white">
 				<Section
 					title="Skills"
 					className="order-4 lg:order-none print:order-none"
