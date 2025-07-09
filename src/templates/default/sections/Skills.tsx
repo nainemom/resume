@@ -15,7 +15,7 @@ export default function Skills(props: SkillsProps) {
 			)}
 		>
 			{props.skills.map((skill) => (
-				<div className="grow w-full">
+				<div className="grow w-full" key={skill.title}>
 					<h3 className="font-bold text-lg mb-1">{skill.title}</h3>
 					<div className="h-1 bg-black rounded-full mb-1" />
 					<Markdown className="text-base">{skill.description}</Markdown>
