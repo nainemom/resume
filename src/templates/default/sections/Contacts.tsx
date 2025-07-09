@@ -61,7 +61,12 @@ function ContactsField(props: ContactsFieldProps) {
 	const hrefPrefix = CONTACT_FIELD_TYPE_TO_HREF_PREFIX[props.type];
 	const Icon = CONTACT_FIELD_TYPE_TO_BOX_ICON_PROPS[props.type];
 	return (
-		<div className="flex flex-row flex-nowrap gap-x-1 items-center text-base">
+		<div
+			className={clsx(
+				"flex-nowrap gap-x-1 items-center text-base",
+				props.type === "phone" ? "hidden print:flex" : "flex",
+			)}
+		>
 			<Icon className="h-6 shrink-0" />
 			{hrefPrefix === false ? (
 				<>{props.value}</>
