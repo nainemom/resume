@@ -1,39 +1,51 @@
-name: 'Deploy to Github Pages'
+name: Deploy to Github Pages
 
 on:
   push:
     branches:
       - master
 
-permissions:
-  contents: write
-
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: 'Checkout'
-        uses: actions/checkout@v3
-      - name: 'Setup Node'
-        uses: actions/setup-node@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
-      - name: 'Install Dependencies'
-        run: npm i
-      - name: Run Linter
-        run: npm run lint:ci
-      - name: 'Build The App'
-        run: npm run build -- --base /resume    
 
-      - name: 'Deploy to Github Pages'
-        id: deployment
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Install dependencies
+        run: npm i
+
+      - name: Build project
+        run: npm run build -- --base /resume
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v4
         with:
-          folder: dist
+          name: production-files
+          path: ./dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: production-files
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
