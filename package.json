@@ -8,9 +8,7 @@
 		"build": "tsc && vite build",
 		"lint": "biome check .",
 		"lint:ci": "biome ci .",
-		"lint:fix": "biome check --fix --unsafe .",
-		"preview": "vite preview",
-		"deploy": "npm run build -- --base /resume && node deploy.js"
+		"lint:fix": "biome check --fix --unsafe ."
 	},
 	"dependencies": {
 		"clsx": "^2.1.1",

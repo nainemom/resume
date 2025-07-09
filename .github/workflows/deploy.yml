@@ -1,0 +1,36 @@
+name: 'Deploy to Github Pages'
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+
+      - name: 'Setup Node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - name: 'Install Dependencies'
+        run: npm i
+
+      - name: Run Linter
+        run: npm run lint:ci
+
+      - name: 'Build The App'
+        run: npm run build -- --base /resume
+
+      - name: 'Deploy to Github Pages'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
