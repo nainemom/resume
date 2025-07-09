@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -28,9 +28,19 @@ jobs:
         run: npm run lint:ci
 
       - name: 'Build The App'
-        run: npm run build -- --base /resume
-
+        run: npm run build -- --base /resume    
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: 'Deploy to Github Pages'
+        id: deployment
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
