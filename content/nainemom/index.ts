@@ -105,7 +105,7 @@ export default {
 				icon: wisdomiseIcon,
 				title: "Wisdomise",
 				description:
-					"A Swiss AI-powered CeDeFi platform that helps investors grow wealth through smart automation and crypto insights.",
+					"Wisdomise is an AI-powered auto trading and portfolio management solution.",
 				website: "https://wisdomise.com/en",
 			},
 			period: [new Date("8 May 2024")],
@@ -137,7 +137,7 @@ export default {
 				icon: cafeBazaarIcon,
 				title: "Cafe Bazaar",
 				description:
-					"Iran’s leading Android app store, with over 46 million Persian-speaking users.",
+					"Iran’s leading Android app store, with over 46 million users.",
 				website: "https://cafebazaar.ir",
 			},
 			period: [new Date("18 July 2020"), new Date("8 May 2024")],
@@ -169,7 +169,7 @@ export default {
 				icon: hotelOneClickIcon,
 				title: "HotelOneClick",
 				description:
-					"One of Iran’s top online booking platforms for hotels, tours, and rental cars.",
+					"One of Iran’s top online booking platforms for hotels, tours, and rental cars for foreign tourists.",
 				website: "https://hoteloneclick.com/",
 			},
 			period: [new Date("10 March 2018"), new Date("10 April 2019")],
