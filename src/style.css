@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 html,
-body,
-#root {
+body {
 	font-family: "Figtree", sans-serif;
-	@apply max-w-7xl m-auto w-full;
+	@apply w-full lg:bg-zinc-700 print:bg-white;
+}
+
+#root {
+	@apply max-w-7xl mx-auto lg:my-4 print:my-0 w-full bg-white lg:rounded-xl print:rounded-none overflow-hidden lg:shadow-2xl;
 }
