@@ -64,7 +64,7 @@ export default {
 			title: "Windows 7 Preview",
 			description:
 				"A nostalgic Windows 7 simulation built entirely with web technologies.",
-			link: "https://github.com/nainemom/win7",
+			link: "https://nainemom.github.io/win7",
 			role: "maintainer",
 			status: "active",
 		},
@@ -79,7 +79,7 @@ export default {
 			title: "Guard",
 			description:
 				"A simple tool to encrypt and decrypt messages using RSA keys.",
-			link: "https://github.com/nainemom/guard",
+			link: "https://nainemom.github.io/guard",
 			role: "maintainer",
 			status: "active",
 		},
