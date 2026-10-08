@@ -54,6 +54,13 @@ export default {
 			status: "archived",
 		},
 		{
+			title: "Boobrie",
+			description: "An anonymous chat service with privacy-first design.",
+			link: "https://boobrie.chat",
+			role: "maintainer",
+			status: "active",
+		},
+		{
 			title: "Windows 7 Preview",
 			description:
 				"A nostalgic Windows 7 simulation built entirely with web technologies.",
@@ -77,19 +84,12 @@ export default {
 			status: "active",
 		},
 		{
-			title: "Viska",
-			description: "An anonymous chat service with privacy-first design.",
-			link: "https://github.com/nainemom/viska",
-			role: "maintainer",
-			status: "archived",
-		},
-		{
-			title: "Hazy",
+			title: "Melkmap",
 			description:
-				"A secure service for sending and receiving anonymous messages.",
-			link: "https://github.com/hazy-app/webapp",
+				"An open-source app that crawls apartment listings from Divar.ir and visualizes real estate prices.",
+			link: "https://melkmap.nainemom.workers.dev/",
 			role: "maintainer",
-			status: "archived",
+			status: "active",
 		},
 		{
 			title: "Nemojy",
